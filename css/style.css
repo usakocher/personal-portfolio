@@ -1,0 +1,256 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #1f2232;
+}
+
+/* Global */
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button_1{
+    height: 38px;
+    border: 0;
+    padding: 0 20px;
+    background:#bc9ec1;
+    color: #1f2232;
+}
+
+/* Header */
+header{
+    background-color: #596475;
+    color: #fde8e9;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #bc9ec1 3px solid;
+}
+
+header a{
+    color: #fde8e9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #main-name{
+    float: left;
+}
+
+header #main-name h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+}
+
+header .current a{
+    color: #bc9ec1;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #fde8e9;
+    font-weight: bold;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+    color: #fde8e9;
+}
+
+article#main-col h2{
+    text-decoration: underline;
+}
+
+aside#side-image{
+    padding-top: 5px;
+    float: right;
+    width: 30%;
+}
+
+/* Hobbies */
+#main-hobbies{
+    color: #fde8e9;
+}
+
+#title-hobbies{
+    color: #fde8e9;
+    text-decoration: underline;
+}
+
+#sports-teams li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#sports-teams img{
+    height: 150px;
+    width: 150px;
+}
+
+#oldTrafford{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#caption{
+    margin-top: 150px;
+    float: left;
+    width: 50%;
+}
+
+aside#traffordPic{
+    float: right;
+    width: 45%;
+    margin-bottom: 15px;
+}
+
+section#travel{
+    color: #fde8e9;
+    margin-bottom: 20px;
+}
+
+section#travel li{
+    list-style: none;
+    text-align: center;
+    float: left;
+    display: inline;
+}
+
+section#causes{
+    color: #fde8e9;
+    margin-bottom: 120px;
+}
+
+/* About Me */
+section#about-me{
+    color: #fde8e9;
+    padding: 0 20px 120px 0;
+}
+
+section#waysToContact{
+    color: #fde8e9;
+    padding: 15px;
+}
+section#newsletter{
+    color: #fde8e9;
+    padding: 15px;
+}
+
+section#newsletter form{
+    margin-top: 15px;;
+}
+
+section#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+section#contact-form{
+    color: #fde8e9;
+    padding: 15px;
+}
+section#socialMedia{
+    color: #fde8e9;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.boxes{
+    float: left;
+    text-align: center;
+    width: 10%;
+    padding:10px;
+    margin-bottom: 50px;
+}
+
+.boxes img{
+    width: 90px;
+}
+
+.boxes-1{
+    float: left;
+    text-align: center;
+    width: 32%;
+    padding:10px;
+    margin-bottom: 50px;
+}
+
+.boxes img-1{
+    width: 90px;
+}
+
+.emailMe input, .emailMe textarea{
+    width: 40%;
+    padding: 5px;
+}
+
+
+/* Footer */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fde8e9;
+    background-color: #596475;
+    text-align: center;
+    border-top: #bc9ec1 3px solid;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #main-name,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    .boxes,
+    .boxes-1,
+    .contact-form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+
+    .emailMe button{
+        display: block;
+        width: 100%;
+    }
+
+    #contact-form form input[type="email"], #contact-form form textarea, #contact-form form input[type="text"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
